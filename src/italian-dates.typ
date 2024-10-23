@@ -1,20 +1,21 @@
 #let semester(short: false, date) = {
-    let wise = (
-        long: "Wintersemester",
-        short: "WiSe"
+    
+    let suse = (
+        long: "Primo semestre",
+        short: "SoSe"
     ).at(if short { "short" } else { "long" })
 
-    let sose = (
-        long: "Sommersemester",
-        short: "SoSe"
+    let wise = (
+        long: "Secondo semestre",
+        short: "WiSe"
     ).at(if short { "short" } else { "long" })
 
     let sem = wise
 
-    let year = if date.month() < 4 or date.month() > 9 {
+    let year = if date.month() < 9 or date.month() > 9 {
         date.year() - 1
     } else {
-        sem = sose
+        sem = suse
         date.year()
     }
 
@@ -29,13 +30,13 @@
 }
 
 #let days = (
-    "Montag",
-    "Dienstag",
-    "Mittwoch",
-    "Donnerstag",
-    "Freitag",
-    "Samstag",
-    "Sonntag"
+    "Lunedi",
+    "Martedi",
+    "Mercoledi",
+    "Giovedi",
+    "Venerdi",
+    "Sabato",
+    "Domenica"
 )
 
 #let weekday(short: false, daynr) = {

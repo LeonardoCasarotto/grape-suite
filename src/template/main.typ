@@ -1,12 +1,12 @@
 #import "@preview/grape-suite:1.0.0": seminar-paper, german-dates
 
-#set text(lang: "de")
+#set text(lang: "it")
 
 #show: seminar-paper.project.with(
-    title: "Die Intensionalität von dass-Sätzen",
-    subtitle: "Intensionale Kontexte in philosophischen Argumenten",
+    title: "Analisi Matematica 1",
+    subtitle: "Primo semestre",
 
-    university: [Universität Musterstadt],
+    university: [Università degli studi di padova],
     faculty: [Exemplarische Fakultät],
     institute: [Institut für Philosophie],
     docent: [Dr. phil. Berta Beispielprüferin],
@@ -15,7 +15,7 @@
     submit-to: [Eingereicht bei],
     submit-by: [Eingereicht durch],
 
-    semester: german-dates.semester(datetime.today()),
+    semester: -dates.semester(datetime.today()),
 
     author: "Max Muster",
     email: "max.muster@uni-musterstadt.uni",
