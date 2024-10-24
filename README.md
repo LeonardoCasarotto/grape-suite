@@ -182,7 +182,7 @@ The grape suite is a suite consisting of following templates:
 | `footer-middle`                        | optional, content, default: `none`, overwrite middle footer part                              |
 | `footer-left`                          | optional, content, default: `none`, overwrite left footer part                                |
 | `show-outline`                         | optional, bool, default: `true`, show outline                                                 |
-| `show-declaration-of-independent-work` | optional, bool, default: `true`, show German declaration of independent work                  |
+
 | `page-margins`                         | optional, margins, default: `none`, overwrite page margins                                    |
 | `fontsize`                             | optional, size, default: `11pt`, overwrite fontsize                                           |
 | `show-todolist`                        | optional, bool, default: `true`, show list of usages of the `todo` function after the outline |

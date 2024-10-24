@@ -1,4 +1,5 @@
-#import "@local/grape-suite:1.0.0": seminar-paper, german-dates
+#import "../seminar-paper.typ"
+#import "../italian-dates.typ"
 
 #set text(lang: "it")
 
@@ -6,9 +7,9 @@
     title: "Analisi Matematica 1",
     subtitle: "Primo semestre",
 
-    university: [Università degli studi di padova],
+    university: [Università degcli studi di padova],
     faculty: [Exemplarische Fakultät],
-    institute: [Institut für Philosophie],
+    institute: [Institut für dhilosophie],
     docent: [Dr. phil. Berta Beispielprüferin],
     seminar: [Beispielseminar],
 
@@ -22,7 +23,8 @@
     address: [
         12345 Musterstadt \
         Musterstraße 67
-    ]
+    ],
+
 )
 
 = Einleitung

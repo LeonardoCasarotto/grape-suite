@@ -1,19 +1,21 @@
 #let semester(short: false, date) = {
     
-    let suse = (
+    //primo semestre
+    let wise = (
         long: "Primo semestre",
-        short: "SoSe"
+        short: "WiSe"
     ).at(if short { "short" } else { "long" })
 
-    let wise = (
+
+    let suse = (
         long: "Secondo semestre",
-        short: "WiSe"
+        short: "SuSe"
     ).at(if short { "short" } else { "long" })
 
     let sem = wise
 
-    let year = if date.month() < 9 or date.month() > 9 {
-        date.year() - 1
+    let year = if date.month() < 9 or date.month() >= 3 {
+        date.year()
     } else {
         sem = suse
         date.year()
@@ -21,7 +23,7 @@
 
     [#sem ]
 
-    if sem == wise {
+    if sem == suse {
         [#year/#(year+1)]
 
     } else {
