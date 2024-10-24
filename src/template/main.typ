@@ -13,8 +13,7 @@
     docent: [Dr. phil. Berta Beispielprüferin],
     seminar: [Beispielseminar],
 
-    submit-to: [Eingereicht bei],
-    submit-by: [Eingereicht durch],
+
 
     semester: italian-dates.semester(datetime.today()),
 
@@ -27,7 +26,7 @@
 
 )
 
-= Einleitung
+= Ei
 #lorem(100)
 
 

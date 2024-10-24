@@ -15,8 +15,7 @@
     docent: [Dr. phil. Berta Beispielprüferin],
     seminar: [Beispielseminar],
 
-    submit-to: [Eingereicht bei],
-    submit-by: [Eingereicht durch],
+
 
     semester: german-dates.semester(datetime.today()),
 

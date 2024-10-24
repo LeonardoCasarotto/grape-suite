@@ -6,8 +6,6 @@
     title: none,
     subtitle: none,
 
-    submit-to: "Submitted to",
-    submit-by: "Submitted by",
 
     university: "UNIVERSITY",
     faculty: "FACULTY",
@@ -23,8 +21,8 @@
 
     title-page-part: none,
     title-page-part-submit-date: none,
-    title-page-part-submit-to: none,
-    title-page-part-submit-by: none,
+
+
 
     sentence-supplement: "Example",
 
@@ -96,25 +94,6 @@
                 title-page-part-submit-date
             }
 
-            #if title-page-part-submit-to == none {
-                ifnn-line(text(size: 0.6em, upper(strong(submit-to))))
-                ifnn-line(university)
-                ifnn-line(faculty)
-                ifnn-line(institute)
-                ifnn-line(seminar)
-                ifnn-line(docent)
-            } else {
-                title-page-part-submit-to
-            }
-
-            #if title-page-part-submit-by == none {
-                ifnn-line(text(size: 0.6em, upper(strong(submit-by))))
-                ifnn-line(author + if student-number != none [ (#student-number)])
-                ifnn-line(email)
-                ifnn-line(address)
-            } else {
-                title-page-part-submit-by
-            }
          ] else {
             title-page-part
         }

@@ -136,8 +136,7 @@ The grape suite is a suite consisting of following templates:
     docent: [Dr. phil. Berta Beispielprüferin],
     seminar: [Beispielseminar],
 
-    submit-to: [Eingereicht bei],
-    submit-by: [Eingereicht durch],
+
 
     semester: german-dates.semester(datetime.today()),
 
@@ -156,8 +155,6 @@ The grape suite is a suite consisting of following templates:
 | :------------------------------------- | :-------------------------------------------------------------------------------------------- |
 | `title`                                | optional, content, default: `none`, title used on the title page                              |
 | `subtitle`                             | optional, content, default: `none`, subtitle used on title page                               |
-| `submit-to`                            | optional, content, default: `"Submitted to"`, title for the assignees's section               |
-| `submit-by`                            | optional, content, default: `"Submitted by"`, title for the assigned's section                |
 | `university`                           | optional, content, default: `"UNIVERSITY"`                                                    |
 | `faculty`                              | optional, content, default: `"FACULTY"`                                                       |
 | `institute`                            | optional, content, default: `"INSTITUTE"`                                                     |
@@ -169,8 +166,7 @@ The grape suite is a suite consisting of following templates:
 | `address`                              | optional, content, default: `"ADDRESS"`                                                       |
 | `title-page-part`                      | optional, content, default: `none`, overwrite date, assignee and assigned section             |
 | `title-page-part-submit-date`          | optional, content, default: `none`, overwrite date section                                    |
-| `title-page-part-submit-to`            | optional, content, default: `none`, overwrite assignee section                                |
-| `title-page-part-submit-by`            | optional, content, default: `none`, overwrite assigned section                                |
+
 | `date`                                 | optional, datetime, default: `datetime.today()`                                               |
 | `date-format`                          | optional, function, default: `(date) => date.display("[day].[month].[year]")`                 |
 | `header`                               | optional, content, default: `none`, overwrite page header                                     |
