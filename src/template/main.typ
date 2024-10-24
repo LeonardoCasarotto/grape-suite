@@ -1,4 +1,4 @@
-#import "@preview/grape-suite:1.0.0": seminar-paper, german-dates
+#import "@local/grape-suite:1.0.0": seminar-paper, german-dates
 
 #set text(lang: "it")
 
@@ -15,7 +15,7 @@
     submit-to: [Eingereicht bei],
     submit-by: [Eingereicht durch],
 
-    semester: -dates.semester(datetime.today()),
+    semester: italian-dates.semester(datetime.today()),
 
     author: "Max Muster",
     email: "max.muster@uni-musterstadt.uni",
